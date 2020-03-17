@@ -2,7 +2,19 @@
 
 ## Descriton
 
+This repository contains the solution presented to the task given by Nordcloud. It consists of 2 branches, the master and the app branch.
 
+In the master branch a simple solution for the actual problem is presented.
+
+In the app branch, a web-app is created to show more the project oriented of the solution and to give a better presentation.
+
+### Testing
+
+Some unittesting has been introduced. From the terminal run:
+
+```
+python -m python tests
+```
 
 ## To do list
 
@@ -13,7 +25,13 @@ Although unit testing is for this state optimal, the next steps are:
 
 ### Web Application
 
-Make this simple project a web application using Flask. 
+Improvements:
+    * export FLASK_APP=nordcloud.py
+    * Field validation for the input data.
+    * Username?
+    * Always security
+ 
+
 
 ### Docker Containers
 

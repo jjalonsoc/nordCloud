@@ -1,6 +1,6 @@
 import pytest
 from pytest import mark 
-from app.link_stations_optimizer import LinkStation, most_suitable_link_station
+from app.util.link_stations_optimizer import LinkStation, most_suitable_link_station
 
 @pytest.fixture
 def link_station():
