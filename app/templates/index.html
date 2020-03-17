@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hi, {{ user.username }}!</h1>
+    {% for post in posts %}
+    <div><p>My name is <b>{{ post.author.username }}</b>. Here I would like to present my solution for the <b>{{ post.body }}</b> provide by Nordcloud. It has been n exciting and learning experience.</p></div>
+    {% endfor %}
+{% endblock %}

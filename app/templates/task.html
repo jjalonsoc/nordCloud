@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <form method="POST" novalidate>
+        <h3>Challenge Inputs</h3>
+        <p>
+            The task is placed in a 2-dimensional grid. There are several link stations, and for each of them we have its coordinates and its reach, which is the distance (with out units) to which station is capable to link.
+
+            For a given set of stations, and a given point in the grid, we would like to know which Link Station has the maximum power according to the formula given by NordCloud.
+        </p>
+        <p>Please enter the list of the stations you are interested in. The right format is:
+
+            [[x1, y1, r1], [x2, y2, r2], ...], (including brackets).
+        </p>
+        Stations List: <input type="text" name="stations_list"><br>
+        <p>
+            Please enter the point you are interested in. The right format is: (x1, y1) (including parenthesis).
+        </p>
+        Point: <input type="text" name="point"><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+{% endblock %}
